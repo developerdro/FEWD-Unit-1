@@ -1,46 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <title>Projects | Leandro Rodriguez</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Projects | Leandro Rodriguez</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/png" href="images/faviconLR.png">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="images/faviconleandro.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav class="main-nav">
-                <a href="index.html"><img src="images/leandropp.jpg" alt="Leandro's Profile Picture" class="profile-image"></a>
+        <nav class="main-nav">
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <li class="name">leandro rodriguez</li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact.html">contact</a></li>
             </ul>
-            </nav>
+        </nav>
+        <header class="box">
+            <h1 class="title">&lt;!-- projects --&gt;</h1>
+            <p>I love to create! One of the main reasons I'm learning front end web delvelopment is so that whenever I have an idea for a web app, I could build it myself.</p>
+            <p>As I learn more about development, below are a couple of projects I plan on creating.</p>
         </header>
-        <main>
-            <h1>&#60;!-- Projects --&#62;</h1>
-            <p>As I continue to learn more about development, here are a couple of projects I plan on creating.</p>
-            <ul class="project-list">
-                <li><img src="images/fasting-app.jpg" alt="Fasting App" class="project-images"></li>
-                <li class="project-text">Fasting App</li>
-                <li><img src="images/social-media-planner.jpg" alt="Social Media App" class="project-images"></li>
-                <li class="project-text">Social Media Scheduling App</li>
-                <li><img src="images/shop-management-app.jpg" alt="Shop Management App" class="project-images"></li>
-                <li class="project-text">Shop Management Software for Screen Printers, DTG Shops, and Embroiderers</li>
-            </ul>
+        <main class="flex">
+            <section class="card">
+                <h2>Fasting App</h2>
+                <img src="images/fasting-app.jpg" alt="Salad" class="projects">
+                <p>For the past 3 months I've been intermittent fasting. I use this app called "Zero". This app has been incredibly helpful to staying on track.</p>
+                <p>Using this app every single day, my curious self wants to take this app a part and build a fasting timer from scratch.</p>
+            </section> 
+            <section class="card">
+                <h2>Social Media Scheduling App</h2>
+                <img src="images/social-media-planner.jpg" alt="Planner" class="projects"> 
+                <p>I use this web application that allows me to schedule instagram content days or even months in advance.</p>
+                <p>I pay $15 a month to use this service.</p>
+                <p>One of the advantages of being a front end web developer is being able to build your very own scheduling app.</p>
+            </section> 
+            <section class="card">
+                <h2>Shop Management Software</h2>
+                <img src="images/MPS.jpg" alt="Maila's Print Shop" class="projects"> 
+                <p>My family owns a small custom t-shirt shop. I'd like to build a shop management software for screen printers, DTG shops, and embroiderers.</p> 
+                <p>We still use pen and paper to manage a lot of our jobs.</p> 
+                <p>I've used other shop management softwares but none of them did what we really needed it to.</p>
+            </section> 
         </main>
         <footer>
             <ul>
-            <li><a href="https://github.com/developerdro" class="social github" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/leandrotenarodriguez" class="social linkedin" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.twitter.com/developerdro" class="social twitter" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/developerdro" class="social instagram" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/developerdro" target="_blank" class="social twitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com/developerdro/" target="_blank" class="social instagram">Instagram</a></li>
+                <li><a href="https://github.com/developerdro" target="_blank"  class="social github">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/leandrotenarodriguez/" target="_blank"  class="social linkedin">LinkedIn</a></li>
             </ul>
-            <p class="copyright">&copy; 2020 Leandro Rodriguez</p>
+            <p class="copyright">&copy;2020 Leandro Rodriguez</p>
         </footer>
     </body>
 </html>

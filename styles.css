@@ -1,196 +1,234 @@
 /* Global Layout Set-up */
-*{
-    box-sizing: border-box;
+* { 
+  box-sizing: border-box;
 }
-
+  
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: black;
-    background: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  color: black;
+  background: white;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
+li {
+  margin: 10px;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #ed1c24;
 }
 
-h1 {
-    color: #0543ff;
-    text-align: left;
-    max-width: 900px;
-    font-size: 35px;
-} 
-
-/* Section Styles  */
-
-/* Header */
+/* Section Styles */
 
 .main-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 120px;
-    background-color: white;
-    font-family: 'poppins', sans-serif;
-    padding: 20px
+  width: 100%;
+  background: white;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
 }
-
-.profile-image {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-
 .nav {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.nav a {
-    text-decoration: none;
-    text-transform: uppercase;
+.nav .name {
+    display: block;
+    margin-right: auto;
     color: black;
-    font-weight: 600;
 }
-
-.nav a:hover {
-    color: #0543ff;
-}
-
 .nav li {
-    list-style: none;
-    padding: 0px 10px 0px 10px;
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  background-color: #ed1c24;
+  color: white
 }
 
-/* Main  */
-
-.banner {
-    background-image: url(images/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 630px;
-    width: 1030px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+header {
+  text-align: center;
+  background: url('images/white-background.png') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
 }
-
-.card {
-    font-weight: 600;
-    text-align: left;
-    font-size: 45px;
-    padding-top: 100px;
-    padding-left: 60px;
-    padding-right: 20px;
+header {
+  line-height: 1.5;
 }
-
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid black;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: rotatey(540deg);
+}
+.tag {
+  background-color: #ed1c24;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 5px auto;
+  font-family: 'poppins', sans-serif;
+  font-size: 30px;
+} 
 .location {
-    text-decoration-color: #0543ff;
-    color: black;
+  background-color: #ed1c24;
+  color: white;
+  font-family: 'poppins', sans-serif;
+  font-size: 30px;
+}
+.card {
+  margin: 30px;
+  padding: 10px 20px 20px;
+  width: 600px;
+  text-align: left;
+  background: white;
+  border-bottom: 4px solid black;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #ed1c24;
 }
 
-.connect {
-    display: block;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.skills li {
+  margin-top: 20px;
 }
 
-/* Mail */
-
-a.mail {
-    color: black;
+.projects {
+  width: 400px;
+  height: 300px
 }
 
-a.mail:hover {
-    color: #0543ff;
+.treehouse {
+  height: 100px;
+  width: auto;
+  text-align: center;
 }
 
-/* Project */
-
-.project-list {
-    list-style-type: none;
-    margin-bottom: 200px;
+.box {
+  display: block;
+  width: 1000px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -150px;
 }
 
-.project-images {
-    display: block;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    width: 50%;
+.title {
+  color: #ed1c24;
 }
 
-.project-text {
-    font-weight: 600;
-    text-align: center;
+.progress {
+  width: 800px;
+  height: auto;
 }
-
-/* Footer */
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    min-height: 30px;
-    padding: 20px 0 40px 20px;
-    margin-top: 30px;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-  
-footer ul li {
-    display: inline-block;
-}
-
-a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .4;
-    transition: all .5s;
-}
-  
-a.twitter {
-    background-image: url(images/043-twitter.svg);
-}
-  
-a.linkedin {
-    background-image: url(images/045-linkedin.svg);
-}
-  
-a.github {
-    background-image: url(images/038-github.svg);
-}
-  
-a.instagram {
-    background-image: url(images/025-instagram.svg);
-}
-  
-a.social:hover {
-    opacity: 1;
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
 }
 
 footer .copyright {
-    top: -8px;
-    font-size: .75em;
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/043-twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/045-linkedin.svg);
+}
+a.github {
+  background-image: url(images/038-github.svg);
+}
+
+a.instagram {
+  background-image: url(images/025-instagram.svg);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
 }
